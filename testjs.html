@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        #div {
+            padding: 5px;
+            border: 4px outset grey;
+            min-height: 100px;
+            width: 300px;
+        }
+        #block{
+            padding: 10px;
+            margin-top: 10px;
+            height: 100px;
+            width: 300px;
+            outline: 1px solid rgb(82, 74, 74);
+        }
+    </style>
+</head>
+<body>
+    <div id="div"></div>
+    <div id="catalog"></div> 
+    <div class="basket"></div>
+    <button id="remove" >Обнулить корзину</button>
+    <button id="elem" > Нажмите чтобы выбрать товар</button>
+    
+    <script>
+        ///Счетчик работы интернет магазина
+            let date = new Date();
+            let hour = date.getHours();
+
+            if (hour < 10 || hour > 18)  div.insertAdjacentHTML('afterbegin', '<span style="color:red">Офис закрыт</span><br><br>Часы работы с 10 до 18 без выходных и праздников');
+            else  div.insertAdjacentHTML('afterbegin', '<span style="color:green">Интернет магазин открыт ждем ваших звонков по телефону : 8-921-899-40-**</span><br><br>Часы работы с 10 до 18 без выходных и праздников');
+            /*
+            *1. Задать температуру в градусах по Цельсию.
+            *Вывести в alert соответствующую температуру в градусах по Фаренгейту.
+            * Подсказка: расчёт идёт по формуле: Tf = (9 / 5) * Tc + 32, где Tf – температура по Фаренгейту, Tc – температура по Цельсию
+            *2. Работа с переменными. Объявить две переменные: admin и name. Записать в name строку "Василий"; Скопировать значение из name в admin. Вывести admin (должно вывести «Василий»).
+            *3. *Чему будет равно JS-выражение 1000 + "108"
+            *4. *Самостоятельно разобраться с атрибутами тега script (async и defer)
+            */ 
+           
+            //let Tc = +prompt('ВВЕДИТЕ ТЕМПЕРАТУРУ В °C')
+            //let Tf = (9 / 5) * Tc + 32
+            //alert(Tf + '°F');
+
+            //let name = 'Василий'
+            //let admin = name;
+            //alert(admin);
+
+            //alert(1000 + "108");
+            ///
+
+            //2. Чему будет равен x в примере ниже?
+            //var a = 2;
+            //var x = 1 + (a *= 2);
+            //console.log(x)
+
+            //3. Объявить две целочисленные переменные a и b и задать им произвольные начальные значения. 
+            //Затем написать скрипт, который работает по следующему принципу:
+            //если a и b положительные, вывести их разность;
+            //если а и b отрицательные, вывести их произведение;
+            //если а и b разных знаков, вывести их сумму; ноль можно считать положительным числом.
+            //let a = 10;
+            //let b = 5;
+
+            //if (a >0 && b>0) console.log(a - b );
+            //else if  (a <0 && b<0) console.log( a * b );
+            //if(a >0 && b<0)  console.log ( a + b );
+
+            //4. Присвоить переменной а значение в промежутке [0..15]. С помощью оператора switch организовать вывод чисел от a до 15.
+            //let br = 5;
+           // switch (br) {
+            //case 1:
+            //console.log( '1' );
+            //case 2:
+            //console.log( '2' );
+            //case 3:
+            //console.log( '3' );
+            //case 4:
+            //console.log( "4" );
+            //case 5:
+            //console.log( '5' );
+            //case 6:
+            //console.log( '6' );
+            //case 7:
+            //console.log( '7' );
+            //case 8:
+            //console.log( '8' );
+            //case 9:
+            //console.log( '9' );
+            //case 10:
+            //console.log( '10' );
+            //case 11:
+            //console.log( "11" );
+            //case 12:
+            //console.log( '12' );
+            //case 13:
+            //console.log( '13' );
+            //case 14:
+            //console.log( '14' );
+            //case 15:
+            //console.log( '15' );
+            //break
+            //default:
+            //console.log( "error" );
+            //}
+            //5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами.
+            // Обязательно использовать оператор return.
+            //function plus(arg1, arg2){
+            //   return arg1+arg2 ;
+            //}
+            //console.log(plus(2,3));
+            //
+            //function minus(arg1, arg2){
+            //   return arg1-arg2 ;
+            //}
+            //console.log(minus(2,3));
+            //
+            //function delenie(arg1, arg2){
+            //   return arg1/arg2 ;
+            //}
+            //console.log(delenie(2,3));
+            //
+            //function mnoj(arg1, arg2){
+            //   return arg1*arg2 ;
+           // }
+            //console.log(mnoj(2,3));
+            //6. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+            // где arg1, arg2 – значения аргументов, operation – строка с названием операции.
+            // В зависимости от переданного значения операции выполнить одну из арифметических операций 
+            //(использовать функции из пункта 5) и вернуть полученное значение (использовать switch).
+            //function mathOperation(arg1, arg2, operation){
+            //switch (operation) {
+            //    case 1:
+            //    console.log(plus(arg1, arg2));
+            //    break;
+            //case 2:
+            //console.log(minus(arg1, arg2));
+            //    break;
+            //case 3:
+            //console.log(delenie(arg1, arg2));
+            //    break;
+            //case 4:
+            //console.log(mnoj(arg1, arg2));
+            //    break;
+            //default:
+            //    alert( "Нет таких значений" );
+            //}
+            //}
+            //mathOperation(5, 5,4);
+            //7. *Сравнить null и 0. Попробуйте объяснить результат.
+            //console.log(null = 0);
+            //8. *С помощью рекурсии организовать функцию возведения числа в степень. 
+            //Формат: function power(val, pow), где val – заданное число, pow – степень.
+            //function power(val, pow){
+            //    if (pow == 1) {
+            //    return val;
+            //} else {
+            //    return val * power(val,pow  - 1);
+            // }
+            //}
+            //alert( power(2, 6) ); // 8
+            ////1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100.
+            //let i = 2
+            ///nextPrime:
+            //while(i <= 97) { 
+            ///    i++
+            //for (let j = 2; j < i; j++) { 
+            //    if (i % j == 0) continue nextPrime; 
+            //    
+            //}
+            //console.log( i ); 
+            //}
+            //2. С этого урока начинаем работать с функционалом интернет-магазина. Предположим, есть сущность корзины. Нужно реализовать функционал подсчета стоимости корзины в зависимости от находящихся в ней товаров. Товары в корзине хранятся в массиве. Задачи:
+            //a) Организовать такой массив для хранения товаров в корзине;
+            //b) Организовать функцию countBasketPrice, которая будет считать стоимость корзины.
+            //let Sum = 0;
+            //let fruits = ['Samsung' ,'Apple' ,'Huawei']
+            //
+            //function countBasketPrice(arg1,arg2,arg3){
+            //let userAnswer = prompt ('Введите товар из списка: Samsung ,Apple ,Huawei.')
+            //switch (userAnswer) {
+            //case fruits[0]:
+            // Sum += arg1 ;
+            //    break
+            //case fruits[1]:
+           //  Sum += arg2 ;
+           //     break
+            //case fruits[2]:
+            // Sum += arg3 ;
+            //    break
+            //default:
+            //elem.insertAdjacentHTML('afterend', `<p>Нет таких значений</p>`);
+           // //}
+            //
+            //elem.insertAdjacentHTML('afterend', `<p>Товаров в корзине на сумму: ${Sum} рублей</p>`);
+            //}
+            //
+            //elem.onclick = () =>countBasketPrice(20000,45000,10000);
+
+            //3.*Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла. Выглядеть это должно так:
+            //for(…){// здесь пусто}
+            //for (let i = 0; i < 10; console.log(i++));
+            //4. *Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5:
+            //x
+            //xx
+            //xxx
+            //xxxx
+            //xxxxx
+            //let lines = 21;
+            //let str = " ";
+            //let star = "x";
+            //for(let i = 1; i < lines; i++){
+            //str += star;
+            //console.log(i+str);
+            //}
+            //1. Написать функцию, преобразующую число в объект. Передавая на вход число от 0 до 999,
+            // мы должны получить на выходе объект, в котором в соответствующих свойствах описаны единицы, 
+            // десятки и сотни. Например, для числа 245 мы должны получить следующий объект: {‘единицы’: 5, ‘десятки’: 4, ‘сотни’: 2}. 
+            // Если число превышает 999, необходимо выдать соответствующее сообщение с помощью console.log и вернуть пустой объект.
+            
+            
+            
+            function getObj(nmb1,nmb2,nmb3,error,objectnull)
+                {
+                let myString = prompt('введите число от 0 до 999');
+               
+                if (myString <= 999 && myString>100) {
+                let myChunkSplits = myString.match(/.{1}/g);
+                console.log(nmb3+myChunkSplits[2]+nmb2+myChunkSplits[1]+nmb1+myChunkSplits[0]);
+                }
+                else if(myString <= 100 && myString >10){
+                let myChunkSplits = myString.match(/.{1}/g);
+                console.log(nmb3+myChunkSplits[1]+nmb2+myChunkSplits[0]);
+                } 
+                else if(myString <= 10 && myString >=1) {
+                let myChunkSplits = myString.match(/.{1}/g);
+                console.log(nmb3+myChunkSplits[0])
+                }
+                else if (myString == 0 || myString == null) {
+                console.log(objectnull);
+                }
+                else if (myString>999)
+                console.log(error+objectnull);
+                }
+                
+            
+            //getObj(' Сотни: ',' Десятки: ','Единицы: ','Ошибка введите число поменьше ','object is null');
+            
+            //2.Продолжить работу с интернет-магазином:
+            //2.1. В прошлом домашнем задании вы реализовали корзину на базе массивов. Какими объектами можно заменить их элементы?
+            //2.2. Реализуйте такие объекты.
+            //2.3. Перенести функционал подсчета корзины на объектно-ориентированную базу.
+            
+            let Sum= 0;
+            let catalog = {
+                basket:{},
+                list:[
+                {
+                    id:1,
+                    price:20000,
+                    model:'Samsung',
+                },
+                {
+                    id:2,
+                    price:45000,
+                    model:'Apple',
+                },
+                {
+                    id:3,
+                    price:10000,
+                    model:'Huawei',
+                },
+            ]
+        }
+
+            let Sumquant = 0;
+            let phones = {
+               
+                id1:{
+                    
+                    price:0,
+                    model:'Samsung',
+                    quantity:0,
+                   
+                },
+                id2:{
+                    price:0,
+                    model:'Apple',
+                    quantity:0,
+                },
+                id3:{
+                    price:0,
+                    model:'Huawei',
+                    quantity:0,
+                },
+                
+                
+                }
+
+            //let a = Object.assign(phones, catalog);
+           //console.log(catalog[0])
+            //console.log(a); // { a: 1 }
+
+            let basket = document.querySelector('.basket');
+            function basketInit(){
+                  
+                basket.insertAdjacentHTML('afterBegin', `
+                                                    <h3>Корзина</h3>
+                                                    <div class="basket-1"></div>
+                                                    <div class="basket-2"></div>
+                                                    <div class="basket-3"></div>
+                                                    <div class="summa"></div>
+                                                    <br>`
+                                        ); 
+            }
+            function catalogInit(){
+            let catalog = document.querySelector('#catalog');
+            catalog.insertAdjacentHTML('afterBegin', `
+                                                    <hr>
+                                                    <h3>Каталог</h3>
+                                                    <div id="block" ><p>${phones.id1.model} цена 20000 р </p></div>
+                                                    <p><button class="SamsungBtn">Добавить в корзину</button></p>
+                                                    <div id="block" ><p>${phones.id2.model} цена 45000 р </p></div>
+                                                    <p><button class="AppleBtn">Добавить в корзину</button></p>
+                                                    <div id="block" ><p>${phones.id3.model} цена 10000 р </p></div>
+                                                    <p><button class="HuaweiBtn">Добавить в корзину</button></p>
+                                                    <hr>`
+                                        ); 
+            }
+            
+           function priceInit(){
+               return summa.innerHTML = `<p>В корзине товаров на сумму: ${sumPrice ()} рублей<br> Колличество штук: ${Sumquant+=1}</p> `;
+            }
+            
+            catalogInit();
+            basketInit();
+            //function countBasketPrice(arg1,arg2,arg3){
+            //    
+            //
+            //    let userAnswer = prompt ('Введите товар из списка: Samsung ,Apple ,Huawei.','Apple')
+            //    switch (userAnswer) {
+            //    case phones.id1.model:
+            //     Sum += arg1 ;
+            //        break
+            //    case phones.id2.model:
+            //     Sum += arg2 ;
+            //        break
+            //    case phones.id3.model:
+            //     Sum += arg3 ;
+            //        break
+            //    default:
+            //    elem.insertAdjacentHTML('afterend', `<p>Нет таких значений</p>`);
+            //    }
+            //    priceInit();
+            //    }
+            //elem.onclick = () =>countBasketPrice(20000,45000,10000);
+            
+            
+            let AppleBtn = document.querySelector('.AppleBtn');
+            let SamsungBtn = document.querySelector('.SamsungBtn');
+            let HuaweiBtn = document.querySelector('.HuaweiBtn');
+            let summa = document.querySelector('.summa');
+            
+            let basketProductSamsung = document.querySelector('.basket-1');
+            let basketProductApple = document.querySelector('.basket-2');
+            let basketProductHuawei = document.querySelector('.basket-3');
+            function sumPrice (){
+            return phones.id1.price+phones.id2.price+phones.id3.price
+            }
+
+            function samfoo( ){
+               return basketProductSamsung.innerHTML = `<p>${phones.id1.model} цена ${phones.id1.price+=catalog.list[0].price} рублей ${phones.id1.quantity+=1} шт.</p>`;
+            }
+            function huafoo(){
+                return basketProductHuawei.innerHTML = `<p>${phones.id3.model} цена ${phones.id3.price+=catalog.list[2].price} рублей ${phones.id3.quantity+=1} шт.</p>`;
+            }
+            function appfoo(){
+                return basketProductApple.innerHTML = `<p>${phones.id2.model} цена ${phones.id2.price+=catalog.list[1].price} рублей ${phones.id2.quantity+=1} шт.</p>`; 
+            }
+            
+            SamsungBtn.addEventListener( "click" , samfoo);
+            HuaweiBtn.addEventListener( "click" , huafoo);
+            AppleBtn.addEventListener( "click" , appfoo);
+
+            function removeBtn(){
+                 basket.remove();
+                 
+               
+                  }
+            remove.onclick = () => removeBtn();
+            SamsungBtn.onclick = () => priceInit();
+            AppleBtn.onclick = () => priceInit();
+            HuaweiBtn.onclick = () => priceInit();
+
+           
+            //3. Сделать генерацию корзины динамической: верстка корзины не должна находиться в HTML-структуре. Там должен быть только div, 
+            //в который будет вставляться корзина, сгенерированная на базе JS:
+            //3.1. Пустая корзина должна выводить строку «Корзина пуста»;
+            //3.2. Наполненная должна выводить «В корзине: n товаров на сумму m рублей».
+            
+</script>
+</body>
+</html>
