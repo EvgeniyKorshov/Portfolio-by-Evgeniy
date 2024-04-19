@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7fbbe51a5e.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="body-grid">
+  <nav class="nav-grid">
+    <div class="header ">
+      
+   <div class="wrap flex_pad">
+    <div class="logo flex_pad">
+        <a class="transformation" href="index.html"><img src="img/logo.png" alt="logo"></a>
+     <img src="img/search.svg" alt="search">
+    </div>
+    <div class="butonbar flex_pad ">
+
+      <div class="burger">
+                                            
+        <input type="checkbox" id="menu">
+        <label for="menu"><img class="transformation" src="img/linii.svg" alt="menu"></label>
+                                    
+              <div class="over">
+                <nav class="nav">
+                  <label class="icon-close" for="menu"><i class="fas fa-times"></i></label>
+                  <p class="nav-title">MENU</p>
+                  <a class="menu menu-top" href="#">MAN</a> 
+                  <ul>
+                    <li class="menu-li-padding" ><a class="menu"  href="#">Accessories</a> </li>
+                    <li class="menu-li-padding"><a class="menu"  href="#">Bags</a></li>
+                    <li class="menu-li-padding"><a class="menu"  href="#">Denim</a></li>
+                    <li class="menu-li-padding"><a class="menu"  href="#">T-Shirts</a></li>
+                  </ul>
+                  <a class="menu menu-top"  href="">WOMAN</a>
+                  <ul>
+                    <li class="menu-li-padding"><a class="menu"  href="#">Accessories</a></li>
+                    <li class="menu-li-padding"><a class="menu"  href="#">Jackets & Coats</a></li>
+                    <li class="menu-li-padding"><a class="menu"  href="#">Polos</a></li>
+                    <li class="menu-li-padding"><a class="menu"  href="#">T-Shirts</a></li>
+                    <li class="menu-li-padding"><a class="menu"  href="#">Shirts</a></li>
+                  </ul>
+                  
+                  <a class="menu menu-top"  href="">KIDS</a>
+                  <ul>
+                  <li class="menu-li-padding"><a class="menu"  href="#">Accessories</a></li>
+                  <li class="menu-li-padding"><a class="menu"  href="#">Jackets & Coats</a></li>
+                  <li class="menu-li-padding"><a class="menu"  href="#">Polos</a></li>
+                  <li class="menu-li-padding"><a class="menu"  href="#">T-Shirts</a></li>
+                  <li class="menu-li-padding"><a class="menu"  href="#">Shirts</a></li>
+                  <li class="menu-li-padding"><a class="menu"  href="#">Bags</a></li>
+                  </ul>
+                </nav>
+              </div>
+        
+    </div>
+
+
+    <a class="transformation hidden" href="registration.html"><img src="img/profil.svg" alt="profil"></a>
+    <a class="transformation hidden" href="cart.html"><img src="img/korzina.svg" alt="basket"></a><sup class="elips hidden">5</sup>
+</div>
+   
+     
+   </div>
+ </div>
+</nav>
+  
+  <main class="main-grid">
+  <div class="main_product">
+  <div class="main_product_wid flex_pad"><p class="heading-registration"><span class="pink ">SHOPPING CART</span></p> </div>
+   
+  </div>
+   
+    <div class="content">
+      <div class="block-padding display-block"></div>
+    <div class="block flex_pad" id="cart-wrap">
+       
+       
+
+        
+       <div class="shoppint_cart ">
+           <div class="cart1 flex_right">
+            <div class="cart_content">
+              <p class="form_content_phead">MANGO  PEOPLE  T-SHIRT</p> <br>
+              <p class="cart-textp">Price: <span class="form_content_howmuch">$300</span> </p> 	
+              <p class="cart-textp">  Color: Red</p> 
+              <p class="cart-textp"> Size: Xl</p> 	
+              <p class="cart-textp">  Quantity:&nbsp;&nbsp;<input class="enter-text" type="number" required></p> <br>	
+              </div>       
+            <p class="cross"><i class="fas fa-times"></i></p>
+           </div>
+
+           <div class="cart2 flex_right">
+            <div class="cart_content">
+              <p class="form_content_phead">MANGO  PEOPLE  T-SHIRT</p> <br>
+              <p class="cart-textp">Price: <span class="form_content_howmuch">$300</span> </p> 	
+              <p class="cart-textp">  Color: Red</p> 
+              <p class="cart-textp"> Size: Xl</p> 	
+              <p class="cart-textp">  Quantity:&nbsp;&nbsp;<input class="enter-text" type="number" required></p> <br>	
+              </div>     
+            
+            <p class="cross"><i class="fas fa-times"></i></p>
+           </div>
+           <div class="cart_btn flex_pad">
+            <a class="clear-shop-btn flex" href="#">CLEAR SHOPPING CART</a>
+           <a class="continue-shop-btn flex" href="#">CONTINUE SHOPPING</a>
+           </div>
+           
+       </div>
+
+       <div class="cart_form">
+         <form>
+      <p class="cart-margin-left-top"> SHIPPING ADRESS</p> <br>
+        <input class="form-cart-reg margin-cart-reg" type="text" placeholder="Bangladesh" required><br><br>
+        <input class="form-cart-reg margin-cart-reg" type="text" placeholder="State" required><br><br>
+        <input class="form-cart-reg margin-cart-reg" type="text" placeholder="Postcode / Zip" required><br><br>
+        <a class="get-btn flex" href="#">GET A QUOTE</a><br><br><br>
+      </form>
+        <div class="total">
+         <p class="subtotal-p"> SUB TOTAL     <span class="form_content_howmuch">   $900</span> </p>
+          <p class="grandtotal-p">  GRAND TOTAL  <span class="form_content_howmuch">   $900</span></p>
+            <hr class="check-hr">
+            <a class="check-btn flex" href="#">PROCEED TO CHECKOUT</a>
+        </div>
+       </div>
+        
+        
+        
+        
+        
+      </div>
+      <div class="block-padding display-block"></div>
+  </div>
+    
+
+  <div class="bcg-subscribs">
+    <div class="subscribs flex">
+     <div class="subbl flex_pad ">
+     <div class="facepalm flex_niz"><br><p><span class="flex facepalm-font">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</span></p></div>
+     
+     <div class="but_sub"><p><span class="flex sub-color font-sub">SUBSCRIBE</span>
+       
+      <span class="flex sub-color font-cont-sub">FOR OUR NEWLETTER AND PROMOTION</span></p> 
+    <form class="button-form flex">
+      <input class="push" type="email" required placeholder="Enter Your Email *">
+      <button class="push-but">Subscribe</button></form> </div>
+      </div>
+    </div>
+    </div>
+</main>
+<footer class="footer-grid">
+  <div class="footer ">
+ <div class="block flex_pad">
+<p><span class="white footer-cont ">&copy;&nbsp;2021 Brand All Rights Reserved.</span></p>
+<div class="seti flex_content ">
+  <div class="facebook flex"><i class="fab fa-facebook-f"></i></div>
+  <div class="instagram flex"><i class="fab fa-instagram"></i></div>
+  <div class="pinterest flex"><i class="fab fa-pinterest-p"></i></div>
+<div class="twitter flex"><i class="fab fa-twitter"></i></div>
+</div>
+
+</div>
+
+</div>
+</footer>
+
+  
+</body>
+</html>
